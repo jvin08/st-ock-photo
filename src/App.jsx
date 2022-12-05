@@ -3,7 +3,7 @@ import { FaSearch } from 'react-icons/fa'
 import Photo from './Photo'
 import './App.css'
 
-// const clientID = `?client_id=${process.env.REACT_APP_ACCESS_KEY}`
+const clientID = `?client_id=${process.env.REACT_APP_ACCESS_KEY}`
 const mainUrl = `https://api.unsplash.com/photos/`
 const searchUrl = `https://api.unsplash.com/search/photos/`
 
@@ -24,9 +24,11 @@ function App() {
     const urlQuery = `&query=${query}`
 
     if (query) {
-      url = `${searchUrl}?client_id=f0LEEdZzisebRu87ChvCWYx4nGI_XCwaWbx6YYTFSYQ${urlPage}${urlQuery}`
+//       url = `${searchUrl}?client_id=f0LEEdZzisebRu87ChvCWYx4nGI_XCwaWbx6YYTFSYQ${urlPage}${urlQuery}`
+      url = `${searchUrl}${clientID}${urlPage}${urlQuery}`
     } else {
-      url = `${mainUrl}?client_id=f0LEEdZzisebRu87ChvCWYx4nGI_XCwaWbx6YYTFSYQ${urlPage}`
+//       url = `${mainUrl}?client_id=f0LEEdZzisebRu87ChvCWYx4nGI_XCwaWbx6YYTFSYQ${urlPage}`
+      url = `${mainUrl}${clientID}${urlPage}`
     }
 
 
