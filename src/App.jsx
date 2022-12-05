@@ -24,11 +24,11 @@ function App() {
     const urlQuery = `&query=${query}`
 
     if (query) {
-//       url = `${searchUrl}?client_id=f0LEEdZzisebRu87ChvCWYx4nGI_XCwaWbx6YYTFSYQ${urlPage}${urlQuery}`
-      url = `${searchUrl}${clientID}${urlPage}${urlQuery}`
+      url = `${searchUrl}?client_id=f0LEEdZzisebRu87ChvCWYx4nGI_XCwaWbx6YYTFSYQ${urlPage}${urlQuery}`
+//       url = `${searchUrl}${clientID}${urlPage}${urlQuery}`
     } else {
-//       url = `${mainUrl}?client_id=f0LEEdZzisebRu87ChvCWYx4nGI_XCwaWbx6YYTFSYQ${urlPage}`
-      url = `${mainUrl}${clientID}${urlPage}`
+      url = `${mainUrl}?client_id=f0LEEdZzisebRu87ChvCWYx4nGI_XCwaWbx6YYTFSYQ${urlPage}`
+//       url = `${mainUrl}${clientID}${urlPage}`
     }
 
 
